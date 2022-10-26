@@ -1,0 +1,144 @@
+.recetas {
+  padding: 100px 0;
+  .h3 {
+    @include h2(#b5ab50);
+    text-align: center;
+    font-size: 40px;
+    color: #b5ab50;
+    align-items: center;
+    text-align: center;
+    @media (max-width: 601px) {
+      flex-flow: wrap;
+    }
+  }
+  .container {
+    padding: 50px 0;
+    margin: auto;
+    grid-template-areas:
+      "receta1 receta2 receta3"
+      "receta1 receta4 receta5";
+    grid-template-columns: 2fr;
+    align-items: flex-start;
+    text-align: center;
+    display: grid;
+    width: 100%;
+    gap: 50px;
+    @media (max-width: 601px) {
+      max-width: 350px;
+      grid-template-areas:
+        "receta1"
+        "receta2"
+        "receta3"
+        "receta4"
+        "receta5";
+      grid-template-columns: 1fr;
+      display: grid;
+      grid-auto-flow: column;
+      width: auto;
+      width: 80%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      @media (max-width: 601px) {
+        flex-flow: wrap;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      h4{
+        @media (max-width: 601px) {
+          align-self: center;
+         }
+      }
+
+      p {
+        text-align: center;
+        @media (max-width: 601px) {
+          align-self: center;
+         }
+      }
+    }
+  }
+
+  .receta1 {
+    grid-area: receta1;
+    .parrafo1{
+      font-size: 18px;
+      color: black;
+    }
+    .parrafo2{
+      @extend .parrafo1;
+      font-weight: bold;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .receta2 {
+    grid-area: receta2;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  .receta3 {
+    grid-area: receta3;
+    .img3 {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  .receta4 {
+    grid-area: receta4;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  .receta5 {
+    grid-area: receta5;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  .a2 {
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    background-color: #b5ab50;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(105%);
+      background-color: #5c5623;
+    }
+
+    @media (max-width: 601px) {
+     align-self: center;
+    }
+  }
+}

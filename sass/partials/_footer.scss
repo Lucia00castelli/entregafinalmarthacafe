@@ -1,0 +1,123 @@
+@media(max-width: 600px){
+
+
+footer{
+    display: flex;
+
+    .container{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        .footer_logo{
+            img{
+                width: 60px;
+            }
+        }
+
+        .footer__contacto{
+            .social__icons{
+                display: flex;
+                justify-content: space-between;
+                margin:10px 0;
+                .bx{
+                    display: block;
+                    color: #b5ab50;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .footer__newsletter{
+            text-align: center;
+            .footer__form{
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                input{
+                    border: none;
+                    height: 30px;
+                    padding: 1em;
+                }
+                button{
+                    background-color:#b5ab50 ;
+                    border: none;
+                    color: white;
+                    height: 30px;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                }
+
+
+            }
+        }
+    }
+    
+    
+
+}
+
+}
+
+.footer {
+    padding: 100px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      .footer_logo {
+        img {
+          width: 100px;
+        }
+      }
+      .footer__contacto {
+        .social__icons {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0;
+          font-size: 30px;
+          .bx {
+            display: block;
+            color: #b5ab50;
+          }
+        }
+      }
+      .footer__newsletter {
+        text-align: center;
+        
+        .footer__form {
+          margin-top: 10px;
+          display: flex;
+          gap: 10px;
+          @media (max-width: 601px) {
+            align-self: center;
+           }
+          input {
+            border: none;
+            height: 30px;
+            padding: 1em;
+            width: 200px;
+            @media (max-width: 601px) {
+              align-self: center;
+             }
+          }
+          button {
+            @media (max-width: 601px) {
+              align-self: center;
+             }
+            background-color: #b5ab50;
+            border: none;
+            color: white;
+            height: 30px;
+            text-transform: uppercase;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+

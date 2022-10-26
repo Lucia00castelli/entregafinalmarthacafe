@@ -1,0 +1,119 @@
+header {
+  padding: 25px;
+  position: fixed !important;
+  width: 100%;
+  background-color: $secondary-color;
+  .bx {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .logo {
+    text-indent: -99999px;
+    width: 100px;
+    height: 100px;
+    background: url(../../images/logo.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+
+    img {
+      height: 150px;
+      width: 150px;
+      @media (max-width: 600px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .ul {
+      display: flex;
+      gap: 40px;
+      font-size: 20px;
+      width: 40%;
+      justify-content: flex-start;
+      align-items: center;
+
+      &:nth-child(1) {
+        justify-content: flex-end;
+      }
+
+      li {
+        a {
+          color: black;
+        }
+      }
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.5em 1em;
+    align-items: center;
+    transition: all 0.5s ease;
+
+    .logo {
+      text-indent: -99999px;
+      width: 60px;
+      height: 60px;
+      background: url(../images/logo.jpg);
+      background-size: 60px;
+      background-repeat: no-repeat;
+      background-position: center left;
+      display: block;
+    }
+
+    display: flex;
+    position: relative;
+    .bx {
+      font-size: 40px;
+      color: red;
+      display: block;
+      font-size: 40px;
+      color: map-get($colores, primary-color);
+    }
+  }
+
+  .menu-mobile {
+    display: block;
+    position: absolute;
+    background-color: map-get($colores, secondary-color);
+    top: 60px;
+    right: -100%;
+    width: 50%;
+    transition: all 0.5s ease;
+
+    .ul-mobile {
+      padding: 1em;
+      gap: 1em;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        a {
+          font-size: 1.2em;
+          color: map-get($colores, primary-color);
+          font-family: "Rozha One", serif;
+        }
+      }
+    }
+    &.active {
+      right: 0;
+    }
+  }
+}

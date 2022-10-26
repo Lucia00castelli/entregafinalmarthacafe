@@ -1,0 +1,108 @@
+
+.menu{
+    margin: 100px 0;
+    background-image: url(../../images/budin.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    .container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+.menu__section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: space-between;
+    h3{
+        font-size: 50px;
+        font-weight: 100;
+        text-align: start;
+        text-transform: uppercase;
+    }
+
+}
+
+.menu__item{
+    font-size: 21px;
+    h4{
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    p{
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: 100;
+    }
+}
+
+.menu:nth-child(2n+1){
+    background-image:url(../../images/budin2.jpeg) ;
+    background-position: center;
+    .container{
+        justify-content: flex-start;
+    }
+}
+
+
+@media(max-width: 600px){
+.menu{
+     h3{
+        font-size: 28px;
+     }
+
+    background-color:#EBE6E4 ;
+    overflow: hidden;
+    margin: 0%;
+
+    .container{
+        
+    max-width: 350px;
+    
+    }
+
+
+
+    background-image: url(../../images/budin.jpeg);
+    background-position-y: center;
+    background-position-x: 0%;
+    position: relative;
+    &::before{
+        content: "";
+        display: block;
+        height: 1500px;
+        width: 100%;
+        background-color: #EBE6E4;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.7;
+        top: 0%;
+    }
+}
+.menu__section{
+    overflow: hidden;
+
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.menu__item{
+    width:100%;
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+}

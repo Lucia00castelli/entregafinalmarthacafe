@@ -1,0 +1,160 @@
+.nuestrahistoria{
+    width: 100% ;
+    padding: 100px 0px;
+
+    .nuestrahistoria__main{
+      width: 1130px;
+      max-width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;  
+      @media (max-width: 600px) {
+        flex-flow: wrap;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+      }
+
+
+      img{
+        height: auto;
+        width: 480px;
+        border-radius: 10px;
+        @media (max-width: 400px) {
+            display: none;
+
+        }
+      }
+
+      .about-text{
+         @media (max-width: 400px) {
+            width: 250px;
+            margin-top: 30px;
+        }
+
+        width: 550px;
+       
+        h3{
+            @include h2(#b5ab50);
+            font-size: 40px;
+            color: #b5ab50;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+
+
+        }
+
+        button{
+        
+            align-self: center;
+            justify-content: center;
+            padding: 15px;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            background-color: #b5ab50;
+            transition: all 0.2s ease;
+            border: none;
+        
+        
+            &:hover {
+              transform: scale(105%);
+              background-color: #5c5623;
+            }  
+      
+        }
+      
+      }
+    
+    }
+
+}
+
+.servicios{
+   width: 100%;
+   padding: 100px 0px;
+
+   h3{
+    @include h2(#b5ab50);
+            font-size: 40px;
+            color: #b5ab50;
+            text-align: center;        
+    }
+
+   .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    @media (max-width: 601px) {
+      flex-flow: wrap;
+      display: flex;
+      flex-direction: column;
+     }
+
+    .card{
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: #b5ab50;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        justify-self: center;
+
+        @media (max-width: 601px) {
+         width: auto;
+         }
+
+        i{
+         font-size: 50px;
+         display: block;
+         text-align: center;
+         margin: 25px 0px;
+      
+        }
+
+        h4{
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+
+        .button{
+          align-self: center;
+          justify-content: center;
+          margin-top: 15px;
+          padding: 15px;
+          height: 30px;
+          width: auto;
+          display: flex;
+          align-items: center;
+          color: white;
+          font-size: 18px;
+          background-color:#968e4a;
+          transition: all 0.2s ease;
+          
+       
+          &:hover {
+            transform: scale(105%);
+            background-color: #5c5623;
+          }  
+
+        }
+    }
+
+   }
+
+
+}
+

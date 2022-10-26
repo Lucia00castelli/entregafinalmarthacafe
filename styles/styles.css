@@ -1,0 +1,1353 @@
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #EBE6E4;
+}
+
+header {
+  padding: 25px;
+  position: fixed !important;
+  width: 100%;
+  background-color: #ebe6e4;
+}
+header .bx {
+  display: none;
+}
+header .menu-mobile {
+  display: none;
+}
+header .logo {
+  text-indent: -99999px;
+  width: 100px;
+  height: 100px;
+  background: url(../../images/logo.jpg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  display: block;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header nav img {
+  height: 150px;
+  width: 150px;
+}
+@media (max-width: 600px) {
+  header nav img {
+    width: 80px;
+    height: 80px;
+  }
+}
+header nav .ul {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav .ul:nth-child(1) {
+  justify-content: flex-end;
+}
+header nav .ul li a {
+  color: black;
+}
+@media (max-width: 600px) {
+  header nav .ul {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 0.5em 1em;
+    align-items: center;
+    transition: all 0.5s ease;
+    display: flex;
+    position: relative;
+  }
+  header .logo {
+    text-indent: -99999px;
+    width: 60px;
+    height: 60px;
+    background: url(../images/logo.jpg);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: block;
+  }
+  header .bx {
+    font-size: 40px;
+    color: red;
+    display: block;
+    font-size: 40px;
+    color: #B5AB50;
+  }
+}
+header .menu-mobile {
+  display: block;
+  position: absolute;
+  background-color: #ebe6e4;
+  top: 60px;
+  right: -100%;
+  width: 50%;
+  transition: all 0.5s ease;
+}
+header .menu-mobile .ul-mobile {
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+header .menu-mobile .ul-mobile li a {
+  font-size: 1.2em;
+  color: #B5AB50;
+  font-family: "Rozha One", serif;
+}
+header .menu-mobile.active {
+  right: 0;
+}
+
+.main {
+  background-image: url(../images/fondomain.jpg);
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+}
+@media (min-width: 601px) {
+  .main {
+    min-height: 70vh;
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+  }
+}
+.main .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  max-width: 350px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.main .container h2 {
+  font-family: "Rozha One", serif;
+  font-size: 35px;
+  width: 70%;
+  line-height: 1em;
+  color: #B5AB50;
+}
+@media (min-width: 601px) {
+  .main .container h2 {
+    font-size: 60px;
+    width: 30%;
+  }
+}
+.main .container p {
+  font-size: 15px;
+}
+@media (min-width: 601px) {
+  .main .container p {
+    width: 450px;
+    font-size: 18px;
+  }
+}
+.main .container a {
+  font-size: 13px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5ab50;
+  padding: 0.5em 1em;
+  color: white;
+  transition: all 0.2s ease;
+}
+.main .container a:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+@media (min-width: 601px) {
+  .main .container a {
+    width: 250px;
+    font-size: 16px;
+    width: 30%;
+  }
+}
+@media (min-width: 601px) {
+  .main .container {
+    max-width: 1440px;
+    gap: 40px;
+  }
+}
+
+.main2 {
+  background-image: url(../images/fondomain.jpg);
+  height: 50vh;
+  background-size: cover;
+}
+@media (min-width: 601px) {
+  .main2 {
+    height: 70vh;
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+  }
+}
+.main2 .container {
+  max-width: 350px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main2 .container h2 {
+  text-align: center;
+  justify-content: center;
+  font-family: "Rozha One", serif;
+  font-size: 35px;
+  width: 70%;
+  line-height: 1em;
+  color: #B5AB50;
+}
+@media (min-width: 601px) {
+  .main2 .container h2 {
+    font-size: 60px;
+    width: 100%;
+  }
+}
+.main2 .container p {
+  font-size: 15px;
+}
+@media (min-width: 601px) {
+  .main2 .container p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.main2 .container a {
+  align-self: center;
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5ab50;
+  padding: 0.5em 1em;
+  color: white;
+  transition: all 0.2s ease;
+}
+.main2 .container a:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+@media (min-width: 601px) {
+  .main2 .container a {
+    width: 250px;
+    text-align: center;
+  }
+}
+@media (min-width: 601px) {
+  .main2 .container {
+    max-width: 1440px;
+    gap: 40px;
+  }
+}
+
+.main3 {
+  background-image: url(../images/fondomain.jpg);
+  min-height: 50vh;
+  background-size: cover;
+  background-position: -200px 0px;
+  padding-top: 150px;
+}
+@media (min-width: 601px) {
+  .main3 {
+    min-height: 70vh;
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+  }
+}
+.main3 .container {
+  max-width: 350px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main3 .container h2 {
+  text-align: left;
+  margin-bottom: 15px;
+  justify-content: center;
+  font-family: "Rozha One", serif;
+  font-size: 35px;
+  width: 100%;
+  line-height: 1em;
+  color: #B5AB50;
+}
+@media (min-width: 601px) {
+  .main3 .container h2 {
+    font-size: 60px;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+}
+.main3 .container p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+@media (min-width: 601px) {
+  .main3 .container p {
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+}
+.main3 .container a {
+  align-self: left;
+  margin-left: 0%;
+  font-size: 13px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5ab50;
+  padding: 0.5em 1em;
+  color: white;
+  transition: all 0.2s ease;
+}
+.main3 .container a:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+@media (min-width: 601px) {
+  .main3 .container a {
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (min-width: 601px) {
+  .main3 .container {
+    max-width: 1440px;
+    gap: 40px;
+  }
+}
+
+.carrousel {
+  margin: 100px 0;
+}
+.carrousel h2 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #B5AB50;
+  font-family: "Rozha One", serif;
+  text-align: center;
+  font-size: 40px;
+}
+@media (max-width: 60px) {
+  .carrousel h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .carrousel h2 {
+    font-size: 35px;
+  }
+}
+.carrousel p {
+  text-align: center;
+  margin: auto;
+  padding: 25px 15px;
+}
+@media (min-width: 601px) {
+  .carrousel p {
+    width: 50%;
+  }
+}
+.carrousel a {
+  background-color: #B5AB50;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+  font-size: 25px;
+  transition: all 0.2s ease;
+}
+.carrousel a:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+.carrousel .container {
+  margin: 25px auto;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .container .carrousel__item {
+  position: relative;
+}
+.carrousel .container .carrousel__item img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item img {
+    width: 500px;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(1) {
+  width: 150px;
+}
+.carrousel .container .carrousel__item:nth-child(1)::after {
+  content: "";
+  border: 5px solid #B5AB50;
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 450px;
+  top: -40px;
+  left: -30px;
+}
+@media (max-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(1)::after {
+    display: none;
+  }
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(1) {
+    width: 350px;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(1) img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  opacity: 70%;
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(1) img {
+    width: 100%;
+    opacity: 100%;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(3) {
+  width: 150px;
+}
+.carrousel .container .carrousel__item:nth-child(3)::after {
+  content: "";
+  border: 5px solid #B5AB50;
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 450px;
+  top: 30px;
+  right: -30px;
+}
+@media (max-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(3)::after {
+    display: none;
+  }
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(3) {
+    width: 350px;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(3) img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  opacity: 70%;
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(3) img {
+    width: 100%;
+    opacity: 100%;
+  }
+}
+@media (min-width: 601px) {
+  .carrousel .container {
+    margin: 100px auto;
+    justify-content: space-around;
+  }
+}
+
+.container {
+  max-width: 375px;
+}
+@media (min-width: 601px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.recetas {
+  padding: 100px 0;
+}
+.recetas .h3 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #b5ab50;
+  font-family: "Rozha One", serif;
+  text-align: center;
+  font-size: 40px;
+  color: #b5ab50;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .recetas .h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 601px) {
+  .recetas .h3 {
+    flex-flow: wrap;
+  }
+}
+.recetas .container {
+  padding: 50px 0;
+  margin: auto;
+  grid-template-areas: "receta1 receta2 receta3" "receta1 receta4 receta5";
+  grid-template-columns: 2fr;
+  align-items: flex-start;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  gap: 50px;
+}
+@media (max-width: 601px) {
+  .recetas .container {
+    max-width: 350px;
+    grid-template-areas: "receta1" "receta2" "receta3" "receta4" "receta5";
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-auto-flow: column;
+    width: auto;
+    width: 80%;
+  }
+}
+.recetas .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+@media (max-width: 601px) {
+  .recetas .container div {
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 601px) {
+  .recetas .container div h4 {
+    align-self: center;
+  }
+}
+.recetas .container div p {
+  text-align: center;
+}
+@media (max-width: 601px) {
+  .recetas .container div p {
+    align-self: center;
+  }
+}
+.recetas .receta1 {
+  grid-area: receta1;
+}
+.recetas .receta1 .parrafo1, .recetas .receta1 .parrafo2 {
+  font-size: 18px;
+  color: black;
+}
+.recetas .receta1 .parrafo2 {
+  font-weight: bold;
+}
+.recetas img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.recetas .receta2 {
+  grid-area: receta2;
+}
+.recetas .receta2 img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.recetas .receta3 {
+  grid-area: receta3;
+}
+.recetas .receta3 .img3 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.recetas .receta4 {
+  grid-area: receta4;
+}
+.recetas .receta4 img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.recetas .receta5 {
+  grid-area: receta5;
+}
+.recetas .receta5 img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.recetas .a2 {
+  background-color: black;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  background-color: #b5ab50;
+  transition: all 0.2s ease;
+}
+.recetas .a2:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+@media (max-width: 601px) {
+  .recetas .a2 {
+    align-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+  }
+  footer .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  footer .container .footer_logo img {
+    width: 60px;
+  }
+  footer .container .footer__contacto .social__icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  footer .container .footer__contacto .social__icons .bx {
+    display: block;
+    color: #b5ab50;
+    font-size: 30px;
+  }
+  footer .container .footer__newsletter {
+    text-align: center;
+  }
+  footer .container .footer__newsletter .footer__form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .container .footer__newsletter .footer__form input {
+    border: none;
+    height: 30px;
+    padding: 1em;
+  }
+  footer .container .footer__newsletter .footer__form button {
+    background-color: #b5ab50;
+    border: none;
+    color: white;
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+}
+.footer {
+  padding: 100px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.footer .container .footer_logo img {
+  width: 100px;
+}
+.footer .container .footer__contacto .social__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 30px;
+}
+.footer .container .footer__contacto .social__icons .bx {
+  display: block;
+  color: #b5ab50;
+}
+.footer .container .footer__newsletter {
+  text-align: center;
+}
+.footer .container .footer__newsletter .footer__form {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 601px) {
+  .footer .container .footer__newsletter .footer__form {
+    align-self: center;
+  }
+}
+.footer .container .footer__newsletter .footer__form input {
+  border: none;
+  height: 30px;
+  padding: 1em;
+  width: 200px;
+}
+@media (max-width: 601px) {
+  .footer .container .footer__newsletter .footer__form input {
+    align-self: center;
+  }
+}
+.footer .container .footer__newsletter .footer__form button {
+  background-color: #b5ab50;
+  border: none;
+  color: white;
+  height: 30px;
+  text-transform: uppercase;
+  width: 200px;
+}
+@media (max-width: 601px) {
+  .footer .container .footer__newsletter .footer__form button {
+    align-self: center;
+  }
+}
+
+.nuestrahistoria {
+  width: 100%;
+  padding: 100px 0px;
+}
+.nuestrahistoria .nuestrahistoria__main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  .nuestrahistoria .nuestrahistoria__main {
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.nuestrahistoria .nuestrahistoria__main img {
+  height: auto;
+  width: 480px;
+  border-radius: 10px;
+}
+@media (max-width: 400px) {
+  .nuestrahistoria .nuestrahistoria__main img {
+    display: none;
+  }
+}
+.nuestrahistoria .nuestrahistoria__main .about-text {
+  width: 550px;
+}
+@media (max-width: 400px) {
+  .nuestrahistoria .nuestrahistoria__main .about-text {
+    width: 250px;
+    margin-top: 30px;
+  }
+}
+.nuestrahistoria .nuestrahistoria__main .about-text h3 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #b5ab50;
+  font-family: "Rozha One", serif;
+  font-size: 40px;
+  color: #b5ab50;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .nuestrahistoria .nuestrahistoria__main .about-text h3 {
+    font-size: 35px;
+  }
+}
+.nuestrahistoria .nuestrahistoria__main .about-text p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.nuestrahistoria .nuestrahistoria__main .about-text button {
+  align-self: center;
+  justify-content: center;
+  padding: 15px;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background-color: #b5ab50;
+  transition: all 0.2s ease;
+  border: none;
+}
+.nuestrahistoria .nuestrahistoria__main .about-text button:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+
+.servicios {
+  width: 100%;
+  padding: 100px 0px;
+}
+.servicios h3 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #b5ab50;
+  font-family: "Rozha One", serif;
+  font-size: 40px;
+  color: #b5ab50;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .servicios h3 {
+    font-size: 35px;
+  }
+}
+.servicios .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+@media (max-width: 601px) {
+  .servicios .box {
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.servicios .box .card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #b5ab50;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  justify-self: center;
+}
+@media (max-width: 601px) {
+  .servicios .box .card {
+    width: auto;
+  }
+}
+.servicios .box .card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+}
+.servicios .box .card h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.servicios .box .card .button {
+  align-self: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 15px;
+  height: 30px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background-color: #968e4a;
+  transition: all 0.2s ease;
+}
+.servicios .box .card .button:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+
+.menu {
+  margin: 100px 0;
+  background-image: url(../../images/budin.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+.menu .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.menu__section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: space-between;
+}
+.menu__section h3 {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  font-size: 21px;
+}
+.menu__item h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu__item p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.menu:nth-child(2n+1) {
+  background-image: url(../../images/budin2.jpeg);
+  background-position: center;
+}
+.menu:nth-child(2n+1) .container {
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    background-color: #EBE6E4;
+    overflow: hidden;
+    margin: 0%;
+    background-image: url(../../images/budin.jpeg);
+    background-position-y: center;
+    background-position-x: 0%;
+    position: relative;
+  }
+  .menu h3 {
+    font-size: 28px;
+  }
+  .menu .container {
+    max-width: 350px;
+  }
+  .menu::before {
+    content: "";
+    display: block;
+    height: 1500px;
+    width: 100%;
+    background-color: #EBE6E4;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    top: 0%;
+  }
+  .menu__section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .menu__item {
+    width: 100%;
+  }
+  .menu__item h4 {
+    font-size: 18px;
+  }
+  .menu__item p {
+    font-size: 16px;
+  }
+}
+.recetas__pagina {
+  padding: 100px 0;
+}
+.recetas__pagina .h3 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #b5ab50;
+  font-family: "Rozha One", serif;
+  text-align: center;
+  font-size: 40px;
+  color: #b5ab50;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .recetas__pagina .h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 601px) {
+  .recetas__pagina .h3 {
+    flex-flow: wrap;
+  }
+}
+.recetas__pagina .container {
+  padding: 50px 0;
+  margin: auto;
+  grid-template-areas: "receta1 receta2 receta3" "receta4 receta5 receta6";
+  align-items: center;
+  text-align: center;
+  display: grid;
+  width: 70%;
+  gap: 100px;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .container {
+    max-width: 350px;
+    grid-template-areas: "receta1" "receta2" "receta3" "receta4" "receta5" "receta6";
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+.recetas__pagina .container div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .container div {
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.recetas__pagina .container div h4 {
+  font-size: 20px;
+}
+.recetas__pagina .container div p {
+  text-align: center;
+}
+.recetas__pagina .receta1 {
+  grid-area: receta1;
+}
+.recetas__pagina .receta1 .img1 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .receta1 .img1 {
+    width: 100%;
+    height: auto;
+  }
+}
+.recetas__pagina .receta2 {
+  grid-area: receta2;
+}
+.recetas__pagina .receta2 .img2 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .receta2 .img2 {
+    width: 100%;
+    height: auto;
+  }
+}
+.recetas__pagina .receta3 {
+  grid-area: receta3;
+}
+.recetas__pagina .receta3 .img3 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .receta3 .img3 {
+    width: 100%;
+    height: auto;
+  }
+}
+.recetas__pagina .receta4 {
+  grid-area: receta4;
+}
+.recetas__pagina .receta4 .img4 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .receta4 .img4 {
+    width: 100%;
+    height: auto;
+  }
+}
+.recetas__pagina .receta5 {
+  grid-area: receta5;
+}
+.recetas__pagina .receta5 .img5 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .receta5 .img5 {
+    width: 100%;
+    height: auto;
+  }
+}
+.recetas__pagina .receta6 {
+  grid-area: receta6;
+}
+.recetas__pagina .receta6 .img6 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .receta6 .img6 {
+    width: 100%;
+    height: auto;
+  }
+}
+.recetas__pagina .a2 {
+  align-self: center;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background-color: #b5ab50;
+  transition: all 0.2s ease;
+}
+.recetas__pagina .a2:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+.recetas__pagina .a3 {
+  margin-left: 155%;
+  align-self: center;
+  justify-content: center;
+  padding: 25px;
+  align-items: flex-end;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background-color: #b5ab50;
+  transition: all 0.2s ease;
+}
+@media (max-width: 601px) {
+  .recetas__pagina .a3 {
+    display: none;
+  }
+}
+.recetas__pagina .a3:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+.container .logo {
+  font-size: 3em;
+  font-size: 60px;
+  line-height: 1em;
+  color: #b5ab50;
+  font-family: "Rozha One", serif;
+  text-align: left;
+  font-size: 40px;
+  color: #b5ab50;
+  padding: 30px;
+}
+@media (max-width: 600px) {
+  .container .logo {
+    font-size: 35px;
+  }
+}
+.container .contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 600px) {
+  .container .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contact-wrapper .contact-form {
+    background-color: #b5ab50;
+  }
+  .container .contact-wrapper .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .container .contact-wrapper .contact-form form button,
+.container .contact-wrapper .contact-form form input,
+.container .contact-wrapper .contact-form form textarea {
+    width: 100%;
+    margin: 30px;
+    margin-left: 0%;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 90%;
+  }
+  .container .contact-wrapper .contact-form form button {
+    background-color: black;
+    padding: 0.5em 1em;
+    color: white;
+    transition: all 0.2s ease;
+    width: 80%;
+    border-bottom: none;
+    grid-column: 1/3;
+    margin-top: 70px;
+  }
+  .container .contact-wrapper .contact-form form button:hover {
+    transform: scale(105%);
+    background-color: #5c5623;
+  }
+}
+@media (min-width: 600px) {
+  .container .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .container .contact-wrapper .contact-wrapper > * {
+    padding: 1 em;
+    width: 100%;
+  }
+  .container .contact-wrapper .block {
+    grid-column: 1/3;
+  }
+  .container .contact-wrapper .contact-wrapper > * {
+    padding: 2em;
+  }
+  .container .contact-wrapper .contact-form {
+    background-color: #b5ab50;
+  }
+  .container .contact-wrapper .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .container .contact-wrapper .contact-form form button,
+.container .contact-wrapper .contact-form form input,
+.container .contact-wrapper .contact-form form textarea {
+    width: 100%;
+    margin: 30px;
+    margin-left: 0%;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 90%;
+  }
+  .container .contact-wrapper .contact-form form button {
+    background-color: black;
+    padding: 0.5em 1em;
+    color: white;
+    transition: all 0.2s ease;
+    width: 20%;
+    border-bottom: none;
+    grid-column: 1/3;
+  }
+  .container .contact-wrapper .contact-form form button:hover {
+    transform: scale(105%);
+    background-color: #5c5623;
+  }
+  .container .contact-wrapper .contact-info {
+    text-align: center;
+    padding: 20px;
+  }
+  .container .contact-wrapper .contact-info h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .container .contact-wrapper .contact-info ul li {
+    padding: 5px;
+  }
+  .container .contact-wrapper .contact-info p {
+    margin-top: 30px;
+  }
+  .container .contact-wrapper .contact-info .p2 {
+    font-style: oblique;
+  }
+  .container .contact-wrapper .contact-info .img {
+    margin-top: 100px;
+    height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .container .contact-info h4,
+.container .contact-info ul,
+.container .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  .container .contact-info h4 {
+    margin-top: 15px;
+  }
+  .container .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  .container .contact-info ul li {
+    padding: 0.5em;
+  }
+  .container .contact-info .img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

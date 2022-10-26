@@ -1,0 +1,192 @@
+.recetas__pagina {
+    padding: 100px 0;
+    .h3 {
+      @include h2(#b5ab50);
+      text-align: center;
+      font-size: 40px;
+      color: #b5ab50;
+      align-items: center;
+      text-align: center;
+      @media (max-width: 601px) {
+        flex-flow: wrap;
+      }
+    }
+    .container {
+      padding: 50px 0;
+      margin: auto;
+      grid-template-areas:
+        "receta1 receta2 receta3"
+        "receta4 receta5 receta6";
+    
+      align-items:center;
+      text-align: center;
+      display: grid;
+      width: 70%;
+      gap: 100px;
+      @media (max-width: 601px) {
+        max-width: 350px;
+        grid-template-areas:
+          "receta1"
+          "receta2"
+          "receta3"
+          "receta4"
+          "receta5"
+          "receta6";
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-auto-flow: column;
+      }
+  
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        @media (max-width: 601px) {
+          flex-flow: wrap;
+          display: flex;
+          flex-direction: column;
+        }
+
+        h4{
+            font-size: 20px;
+        }
+  
+        p {
+          text-align: center;
+          
+        }
+      }
+    }
+  
+    .receta1 {
+      grid-area: receta1;
+      
+      .img1 {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        @media (max-width: 601px) {
+          width: 100%;
+          height: auto;
+        }
+
+      }
+
+    }
+  
+
+    .receta2 {
+      grid-area: receta2;
+      .img2 {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        @media (max-width: 601px) {
+          width: 100%;
+          height: auto;
+        }
+
+      }
+    }
+  
+    .receta3 {
+      grid-area: receta3;
+      .img3 {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        @media (max-width: 601px) {
+          width: 100%;
+          height: auto;
+        }
+   
+      }
+    }
+  
+    .receta4 {
+      grid-area: receta4;
+      .img4 {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        @media (max-width: 601px) {
+          width: 100%;
+          height: auto;
+        }
+     
+      }
+    }
+  
+    .receta5 {
+      grid-area: receta5;
+      .img5 {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        @media (max-width: 601px) {
+          width: 100%;
+          height: auto;
+        }
+  
+      }
+    }
+
+    .receta6 {
+        grid-area: receta6;
+        .img6 {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            @media (max-width: 601px) {
+              width: 100%;
+              height: auto;
+            }
+         
+        }
+      }
+  
+    .a2 {
+     align-self: center;
+      width: 150px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+      background-color: #b5ab50;
+      transition: all 0.2s ease;
+  
+      &:hover {
+        transform: scale(105%);
+        background-color: #5c5623;
+      }
+    }
+
+    .a3{
+      @media (max-width: 601px) {
+    display: none;
+
+      }
+      margin-left: 155%;
+        align-self: center;
+        justify-content: center;
+        padding: 25px;
+        align-items: flex-end;
+        width: 200px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        background-color: #b5ab50;
+        transition: all 0.2s ease;
+    
+        &:hover {
+          transform: scale(105%);
+          background-color: #5c5623;
+        }  
+    }
+  }
+  
